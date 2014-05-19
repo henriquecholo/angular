@@ -1,6 +1,10 @@
 angular
 =======
 
-Angular
+Angular - Three Way Data-Binding
 
-Download, install ruby, compass and run: grunt serve
+Three Way Data-Binding using firebase, Angular's Model and View (DOM)
+
+Clone
+Install ruby and compass 
+Run: grunt serve
