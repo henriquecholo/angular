@@ -20,8 +20,8 @@ app.factory('Auth',
     };
 
     $rootScope.signedIn = function () {
-        return Auth.signedIn();
-      };
+      return Auth.signedIn();
+    };
 
     return Auth;
   }

@@ -22,7 +22,7 @@ app.controller('AuthCtrl',
       Auth.register($scope.user).then(function (authUser) {
         console.log(authUser);
         $location.path('/');
-      }), function (error) {
+      }, function (error) {
         $scope.error = error.toString();
       });
     };
