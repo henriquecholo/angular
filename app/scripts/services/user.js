@@ -28,11 +28,11 @@ app.factory('User', function ($firebase, FIREBASE_URL, Auth, $rootScope) {
       };
 
     function setCurrentUser (username) {
-        $rootScope.currentUser = User.findByUsername(username.uid);
+        $rootScope.currentUser = User.findByUsername(username);
       }
 
     $rootScope.$on('$firebaseSimpleLogin:login', function (e, authUser) {
-        setCurrentUser(authUser);
+        setCurrentUser(authUser.uid);
       });
 
     $rootScope.$on('$firebaseSimpleLogin:logout', function() {
